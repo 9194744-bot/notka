@@ -1,0 +1,146 @@
+.Gallery {
+    .carousel {
+        .imgs {
+            padding: 0.4vw 0;
+            align-items: center;
+            justify-content: center;
+            display: flex !important;
+
+            @media (max-width:500px) {
+                padding: 0.7vw 0;
+            }
+
+            .gallery-img {
+                max-width: 100%;
+                min-width: 100%;
+                max-height: 33vw;
+                min-height: 33vw;
+                object-fit: cover;
+
+                @media (max-width:767px) {
+                    max-height: 40vw;
+                    min-height: 40vw;
+                }
+
+                @media (max-width:500px) {
+                    max-height: 65vw;
+                    min-height: 65vw;
+                }
+            }
+        }
+
+        .slick-prev {
+            top: 50%;
+            left: 1vw;
+            z-index: 2;
+            width: 3.5vw;
+            height: 3.5vw;
+            border-radius: 50%;
+            background-color: #EE4349;
+
+            &:hover {
+                background-color: #ee434935;
+
+                &::before {
+                    color: #EE4349;
+                }
+            }
+
+            @media (max-width:1000px) {
+                left: 2vw;
+                width: 4.5vw;
+                height: 4.5vw;
+            }
+
+            @media (max-width:600px) {
+                left: 3vw;
+                width: 6vw;
+                height: 6vw;
+            }
+
+            @media (max-width:450px) {
+                width: 8vw;
+                height: 8vw;
+            }
+
+            &::before {
+                font-size: 1.7vw;
+                font-weight: 100;
+                color: #FFEDC3;
+                content: "\f104";
+                font-style: normal;
+                border-radius: 50%;
+                font-family: FontAwesome;
+
+                @media (max-width:1000px) {
+                    font-size: 2.5vw;
+                }
+
+                @media (max-width:600px) {
+                    font-size: 3.5vw;
+                }
+
+                @media (max-width:450px) {
+                    font-size: 4.5vw;
+                }
+            }
+        }
+
+        .slick-next {
+            top: 50%;
+            z-index: 2;
+            right: 1vw;
+            width: 3.5vw;
+            height: 3.5vw;
+            border-radius: 50%;
+            background-color: #EE4349;
+
+            &:hover {
+                background-color: #ee434935;
+
+                &::before {
+                    color: #EE4349;
+                }
+            }
+
+            @media (max-width:1000px) {
+                right: 2vw;
+                width: 4.5vw;
+                height: 4.5vw;
+            }
+
+            @media (max-width:600px) {
+                right: 3vw;
+                width: 6vw;
+                height: 6vw;
+            }
+
+            @media (max-width:450px) {
+                width: 8vw;
+                height: 8vw;
+            }
+
+            &::before {
+                font-size: 1.7vw;
+                font-weight: 100;
+                color: #FFEDC3;
+                content: "\f105";
+                font-style: normal;
+                border-radius: 50%;
+                font-family: FontAwesome;
+
+                @media (max-width:1000px) {
+                    font-size: 2.5vw;
+                }
+
+                @media (max-width:600px) {
+                    font-size: 3.5vw;
+                }
+
+                @media (max-width:450px) {
+                    font-size: 4.5vw;
+                }
+            }
+        }
+    }
+}

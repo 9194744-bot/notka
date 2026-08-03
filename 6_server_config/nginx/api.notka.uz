@@ -1,0 +1,40 @@
+server {
+    server_name api.notka.uz;
+    client_max_body_size 50M;
+    access_log /var/log/api.notka.uz/access.log;
+    error_log /var/log/api.notka.uz/error.log;
+    location /media/ {
+        root /var/www/api.notka.uz/;
+    }
+
+    location /static/ {
+        root /var/www/api.notka.uz/;
+    }
+
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/run/orzu.sock;
+    }
+
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/api.notka.uz-0001/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/api.notka.uz-0001/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+
+}
+server {
+    if ($host = api.notka.uz) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    server_name api.notka.uz;
+    listen 80;
+    return 404; # managed by Certbot
+
+
+}

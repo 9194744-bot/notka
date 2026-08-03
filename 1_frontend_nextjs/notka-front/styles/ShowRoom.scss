@@ -1,0 +1,72 @@
+.ShowRoom {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width:767px) {
+        height: 350px;
+    }
+
+    @media (max-width:500px) {
+        height: 280px;
+    }
+
+    .back-img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .circle {
+        width: 15vw;
+        height: 15vw;
+        display: flex;
+        color: white;
+        cursor: pointer;
+        font-size: 1.2vw;
+        font-weight: 400;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        align-items: center;
+        font-family: zonapro;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(15.3936px);
+
+        @media (max-width:767px) {
+            width: 24vw;
+            height: 24vw;
+            font-size: 2.4vw;
+        }
+
+        @media (max-width:500px) {
+            width: 33vw;
+            height: 33vw;
+            font-size: 3vw;
+        }
+
+        .degree {
+            height: auto;
+            max-width: 6.5vw;
+            min-width: 6.5vw;
+
+            @media (max-width:767px) {
+                max-width: 10vw;
+                min-width: 10vw;
+            }
+
+            @media (max-width:500px) {
+                max-width: 14vw;
+                min-width: 14vw;
+            }
+        }
+    }
+}

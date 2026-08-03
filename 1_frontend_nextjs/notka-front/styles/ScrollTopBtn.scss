@@ -1,0 +1,48 @@
+.ScrollTopBtn {
+    right: 3vw;
+    width: 5vw;
+    height: 5vw;
+    z-index: 10;
+    bottom: 3vw;
+    display: flex;
+    cursor: pointer;
+    position: fixed;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: solid 1px #EB3839;
+
+    @media (max-width:1000px) {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    @media (max-width:500px) {
+        right: 5vw;
+        bottom: 4vw;
+        width: 12vw;
+        height: 12vw;
+    }
+
+    &::before {
+        font-size: 2vw;
+        color: #EB3839;
+        content: "\f062";
+        font-weight: 100;
+        font-style: normal;
+        font-family: FontAwesome;
+
+        @media (max-width:1000px) {
+            font-size: 3vw;
+        }
+
+        @media (max-width:500px) {
+            font-size: 5vw;
+        }
+    }
+}

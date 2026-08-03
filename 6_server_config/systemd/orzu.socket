@@ -1,0 +1,8 @@
+[Unit]
+Description=Orzu socket
+
+[Socket]
+ListenStream=/run/orzu.sock
+
+[Install]
+WantedBy=sockets.target

@@ -1,0 +1,210 @@
+.Contacts {
+    .back-img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .wrapper {
+        z-index: 3;
+        position: sticky;
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+        @media (max-width:600px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .forms {
+            padding: 2vw;
+            border-radius: 1.7vw;
+            -webkit-border-radius: 1.7vw;
+            -moz-border-radius: 1.7vw;
+            -ms-border-radius: 1.7vw;
+            -o-border-radius: 1.7vw;
+            background-color: #FBE8CC;
+
+            @media (max-width:600px) {
+                width: 100%;
+                padding: 5vw;
+                border-radius: 2.5vw;
+                -webkit-border-radius: 2.5vw;
+                -moz-border-radius: 2.5vw;
+                -ms-border-radius: 2.5vw;
+                -o-border-radius: 2.5vw;
+            }
+
+            .title {
+                color: #EA3338;
+                text-align: left;
+                font-weight: 600;
+                font-family: zonapro;
+
+                @media (max-width:600px) {
+                    font-size: 4.5vw;
+                }
+            }
+
+            .text {
+                color: #EA3338;
+                text-align: left;
+                font-weight: 400;
+                font-size: 1.2vw;
+                font-family: zonapro;
+
+                @media (max-width:900px) {
+                    font-size: 1.8vw;
+                }
+
+                @media (max-width:600px) {
+                    font-size: 3vw;
+                }
+
+                @media (max-width:450px) {
+                    font-size: 13px;
+                }
+            }
+
+            .forms-control {
+
+                input,
+                textarea {
+                    width: 100%;
+                    resize: none;
+                    border: none;
+                    outline: none;
+                    font-weight: 400;
+                    color: #EA3338;
+                    font-size: 18px;
+                    margin-top: 0.7vw;
+                    border-radius: 1vw;
+                    -webkit-border-radius: 1vw;
+                    -moz-border-radius: 1vw;
+                    -ms-border-radius: 1vw;
+                    -o-border-radius: 1vw;
+                    font-family: zonapro;
+                    padding: 1.5vw 2.5vw;
+                    background-color: #ffa33331;
+
+                    &::placeholder {
+                        color: #EA3338;
+                        font-family: zonapro;
+                    }
+
+                    @media (max-width:1100px) {
+                        font-size: 16px;
+                    }
+
+                    @media (max-width:900px) {
+                        font-size: 15px;
+                    }
+
+                    @media (max-width:600px) {
+                        font-size: 14px;
+                        margin-top: 1.5vw;
+                        padding: 2.5vw 3.5vw;
+                        border-radius: 1.5vw;
+                        -webkit-border-radius: 1.5vw;
+                        -moz-border-radius: 1.5vw;
+                        -ms-border-radius: 1.5vw;
+                        -o-border-radius: 1.5vw;
+                    }
+
+                    @media (max-width:450px) {
+                        font-size: 13px;
+                    }
+                }
+
+                .red-line {
+                    border: solid 1px red;
+                }
+
+                input::-webkit-inner-spin-button,
+                input::-webkit-outer-spin-button {
+                    appearance: none;
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                input[type=number] {
+                    appearance: 0;
+                    -moz-appearance: 0;
+                }
+            }
+
+            .button {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                button {
+                    border: none;
+                    outline: none;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #FBE8CC;
+                    margin-top: 0.5vw;
+                    padding: 0.8vw 2.5vw;
+                    border-radius: 0.8vw;
+                    -webkit-border-radius: 0.8vw;
+                    -moz-border-radius: 0.8vw;
+                    -ms-border-radius: 0.8vw;
+                    -o-border-radius: 0.8vw;
+                    font-family: zonapro;
+                    background-color: #EA3338;
+                    border: solid 1px #EA3338;
+                    transition: 0.2s;
+                    -webkit-transition: 0.2s;
+                    -moz-transition: 0.2s;
+                    -ms-transition: 0.2s;
+                    -o-transition: 0.2s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        -webkit-transform: scale(1.1);
+                        -moz-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                        -o-transform: scale(1.1);
+                    }
+
+                    &:nth-child(2) {
+                        color: #EA3338;
+                        margin-left: 1.5vw;
+                        background-color: #ffa33331;
+                    }
+
+                    @media (max-width:1100px) {
+                        font-size: 16px;
+                    }
+
+                    @media (max-width:900px) {
+                        font-size: 15px;
+                    }
+
+                    @media (max-width:600px) {
+                        font-size: 14px;
+                        margin-top: 1.5vw;
+                        border-radius: 1.3vw;
+                        -webkit-border-radius: 1.3vw;
+                        -moz-border-radius: 1.3vw;
+                        -ms-border-radius: 1.3vw;
+                        -o-border-radius: 1.3vw;
+                        padding: 1.2vw 3.5vw;
+
+                        &:nth-child(2) {
+                            margin-left: 3vw;
+                        }
+                    }
+
+                    @media (max-width:450px) {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

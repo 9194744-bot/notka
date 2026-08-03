@@ -1,0 +1,43 @@
+server {
+    server_name notka.uz www.notka.uz;
+
+    access_log /var/log/notka.uz/access.log;
+    error_log  /var/log/notka.uz/error.log;
+
+    root /var/www/notka.uz/;
+    index index.html;
+
+    location / {
+       include snippets/proxy.conf;
+       proxy_pass http://localhost:3002;
+    }
+
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/notka.uz-0001/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/notka.uz-0001/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+
+
+}
+server {
+    if ($host = www.notka.uz) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    if ($host = notka.uz) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    server_name notka.uz www.notka.uz;
+    listen 80;
+    return 404; # managed by Certbot
+
+
+
+
+}

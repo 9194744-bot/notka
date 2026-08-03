@@ -1,0 +1,78 @@
+.Modal {
+    top: 25%;
+    left: 25%;
+    margin: 0;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    padding: 2.5vw;
+    z-index: 20002;
+    position: fixed;
+    border-radius: 2vw;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFEDC3;
+
+    @media(max-width:800px) {
+        top: 35%;
+        left: 20%;
+        width: 60%;
+        height: 30%;
+        padding: 2vw;
+    }
+
+    @media(max-width:500px) {
+        top: 35%;
+        left: 10%;
+        width: 80%;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 3vw;
+        color: #EE4349;
+        font-weight: 700;
+        margin-bottom: 2%;
+        text-align: center;
+        font-family: zonapro;
+
+        @media(max-width:1200px) {
+            font-size: 3.5vw;
+        }
+
+        @media(max-width:800px) {
+            font-size: 4vw;
+        }
+
+        @media(max-width:500px) {
+            font-size: 5.5vw;
+        }
+    }
+
+    button {
+        border: 0;
+        outline: none;
+        margin-top: 2%;
+        color: #EE4349;
+        font-weight: 700;
+        font-size: 1.5vw;
+        padding: 10px 50px;
+        border-radius: 0.8vw;
+        font-family: zonapro;
+        background-color: rgba(255, 255, 255, 0.73);
+
+        @media(max-width:1200px) {
+            font-size: 2vw;
+        }
+
+        @media(max-width:800px) {
+            font-size: 2.5vw;
+        }
+
+        @media(max-width:800px) {
+            font-size: 4vw;
+            padding: 8px 40px;
+        }
+    }
+}

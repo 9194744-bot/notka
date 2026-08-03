@@ -1,0 +1,149 @@
+.Loader {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 13;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    visibility: visible;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFEDC3;
+    animation: pageLoad 0.2s forwards linear;
+    -webkit-animation: pageLoad 0.2s forwards linear;
+    animation-delay: 10s;
+
+    .loading {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        animation-name: loading;
+        animation-duration: 5s;
+        // animation-timing-function: linear;
+        animation-iteration-count: 2;
+
+        .guns {
+            gap: 9vw;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            // animation-name: gun;
+            animation-duration: 1s;
+            flex-direction: column;
+            justify-content: space-between;
+            animation-timing-function: linear;
+            animation-delay: 10s;
+            animation-iteration-count: 1;
+
+            @media (max-width:500px) {
+                gap: 25vw;
+            }
+
+            .gilza {
+                width: 1vw;
+                height: 3vw;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                background-color: #EE4349;
+
+                @media (max-width:500px) {
+                    width: 2vw;
+                    height: 6vw;
+                    border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    -ms-border-radius: 4px;
+                    -o-border-radius: 4px;
+                }
+            }
+        }
+
+        .c1 {
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+        }
+
+        .c2 {
+            transform: rotate(67.5deg);
+            -webkit-transform: rotate(67.5deg);
+            -moz-transform: rotate(67.5deg);
+            -ms-transform: rotate(67.5deg);
+            -o-transform: rotate(67.5deg);
+        }
+
+        .c3 {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+        }
+
+        .c4 {
+            transform: rotate(22.5deg);
+            -webkit-transform: rotate(22.5deg);
+            -moz-transform: rotate(22.5deg);
+            -ms-transform: rotate(22.5deg);
+            -o-transform: rotate(22.5deg);
+        }
+
+        .c5 {
+            transform: rotate(-67.5deg);
+            -webkit-transform: rotate(-67.5deg);
+            -moz-transform: rotate(-67.5deg);
+            -ms-transform: rotate(-67.5deg);
+            -o-transform: rotate(-67.5deg);
+        }
+
+        .c6 {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+        }
+
+        .c7 {
+            transform: rotate(-22.5deg);
+            -webkit-transform: rotate(-22.5deg);
+            -moz-transform: rotate(-22.5deg);
+            -ms-transform: rotate(-22.5deg);
+            -o-transform: rotate(-22.5deg);
+        }
+
+        @keyframes gun {
+            100% {
+                gap: 100vw;
+            }
+        }
+    }
+
+    @keyframes loading {
+        100% {
+            transform: rotate(720deg);
+            -webkit-transform: rotate(720deg);
+            -moz-transform: rotate(720deg);
+            -ms-transform: rotate(720deg);
+            -o-transform: rotate(720deg);
+        }
+    }
+}
+
+@keyframes pageLoad {
+    100% {
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+    }
+}

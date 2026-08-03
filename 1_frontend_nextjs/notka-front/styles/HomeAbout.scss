@@ -1,0 +1,243 @@
+.HomeAbout {
+    background-color: #EE4349;
+
+    .wrapper {
+        display: flex;
+        padding-top: 180px;
+        position: relative;
+        align-items: center;
+        padding-bottom: 180px;
+        justify-content: flex-end;
+
+        @media (max-width:1100px) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        @media (max-width:900px) {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        @media (max-width:500px) {
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+
+        .back-img {
+            top: 0;
+            left: 0;
+            width: auto;
+            height: 100%;
+            position: absolute;
+            margin-bottom: 2vw;
+
+            @media (max-width:767px) {
+                height: 110%;
+                filter: brightness(0.8) blur(1px);
+                -webkit-filter: brightness(0.8) blur(1px);
+            }
+
+            @media (max-width:500px) {
+                display: none;
+            }
+        }
+
+        .texts {
+            z-index: 2;
+            position: sticky;
+            padding-right: 2vw;
+
+            @media (max-width:1100px) {
+                padding-right: 0;
+            }
+
+            @media (max-width:767px) {
+                width: 100%;
+            }
+
+            .about-title {
+                font-size: 3vw;
+                color: white;
+                font-weight: 600;
+                font-family: zonapro;
+
+                @media (max-width:1100px) {
+                    font-size: 3.5vw;
+                }
+
+                @media (max-width:767px) {
+                    font-size: 5vw;
+                }
+
+                @media (max-width:500px) {
+                    font-size: 30px;
+                }
+            }
+
+            .desc {
+                font-size: 1vw;
+                color: white;
+                margin-top: 1vw;
+                font-weight: 400;
+                font-family: zonapro;
+
+                @media (max-width:1100px) {
+                    font-size: 1.2vw;
+                }
+
+                @media (max-width:900px) {
+                    font-size: 1.5vw;
+                }
+
+                @media (max-width:767px) {
+                    font-size: 2.2vw;
+                }
+
+                @media (max-width:500px) {
+                    font-size: 14px;
+                    margin-top: 3vw;
+                }
+            }
+
+            .btns {
+                display: flex;
+                margin-top: 3vw;
+                align-items: center;
+                justify-content: flex-start;
+
+                @media (max-width:500px) {
+                    margin-top: 6vw;
+                }
+
+                .explore {
+                    display: flex;
+                    color: white;
+                    cursor: pointer;
+                    font-size: 0.9vw;
+                    transition: 0.3s;
+                    -webkit-transition: 0.3s;
+                    -moz-transition: 0.3s;
+                    -ms-transition: 0.3s;
+                    -o-transition: 0.3s;
+                    border-radius: 3vw;
+                    -webkit-border-radius: 3vw;
+                    -moz-border-radius: 3vw;
+                    -ms-border-radius: 3vw;
+                    -o-border-radius: 3vw;
+                    padding-right: 1vw;
+                    align-items: center;
+                    font-family: zonapro;
+                    text-decoration: none;
+                    justify-content: flex-start;
+                    background-color: rgba(255, 255, 255, 0.306);
+
+                    &:nth-child(2) {
+                        margin-left: 2vw;
+
+                        @media (max-width:500px) {
+                            margin-left: 4vw;
+                        }
+                    }
+
+                    &:hover {
+                        color: #EE4349;
+                        background-color: white;
+                    }
+
+                    @media (max-width:1100px) {
+                        font-size: 1.2vw;
+                    }
+
+                    @media (max-width:900px) {
+                        font-size: 1.5vw;
+                    }
+
+                    @media (max-width:767px) {
+                        font-size: 2.2vw;
+                        padding-right: 2vw;
+                    }
+
+                    @media (max-width:500px) {
+                        font-size: 14px;
+                        border-radius: 4vw;
+                        -webkit-border-radius: 4vw;
+                        -moz-border-radius: 4vw;
+                        -ms-border-radius: 4vw;
+                        -o-border-radius: 4vw;
+                    }
+
+                    .icon {
+                        padding: 7px;
+                        width: 3.5vw;
+                        height: 2.5vw;
+                        color: #EE4349;
+                        margin-right: 1vw;
+                        border-radius: 3vw;
+                        -webkit-border-radius: 3vw;
+                        -moz-border-radius: 3vw;
+                        -ms-border-radius: 3vw;
+                        -o-border-radius: 3vw;
+                        background-color: white;
+
+                        @media (max-width:767px) {
+                            width: 8vw;
+                            height: 5vw;
+                            margin-right: 2vw;
+                        }
+
+                        @media (max-width:500px) {
+                            width: 10vw;
+                            height: 7vw;
+                            margin-right: 2vw;
+                            border-radius: 4vw;
+                            -webkit-border-radius: 4vw;
+                            -moz-border-radius: 4vw;
+                            -ms-border-radius: 4vw;
+                            -o-border-radius: 4vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .lenta {
+        background-color: #FFEDC3;
+
+        .slick-track {
+            display: flex;
+            align-items: center;
+
+            div {
+                display: flex;
+                align-items: center;
+
+                .partner {
+                    display: flex;
+                    padding: 0.8vw 4vw;
+                    align-items: center;
+                    justify-content: center;
+
+                    @media (max-width:900px) {
+                        padding: 0.5vw 3vw;
+                    }
+
+                    @media (max-width:767px) {
+                        padding: 1vw 2vw;
+                    }
+
+                    @media (max-width:500px) {
+                        padding: 2vw;
+                    }
+
+                    .lenta-img {
+                        height: auto;
+                        max-width: 100%;
+                        min-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

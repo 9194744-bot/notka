@@ -1,0 +1,18 @@
+[Unit]
+Description=Orzu daemon
+Requires=orzu.socket
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/home/Api/orzu
+ExecStart=/home/Api/orzu/venv/bin/gunicorn \
+          --access-logfile - \
+          --workers 1 \
+          --bind unix:/run/orzu.sock \
+          --env DJANGO_SETTINGS_MODULE=config.settings.production \
+          config.wsgi:application \
+
+[Install]
+WantedBy=multi-user.target
