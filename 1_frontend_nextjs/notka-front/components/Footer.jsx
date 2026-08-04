@@ -85,7 +85,7 @@ function Footer() {
                     <ul className="col-4">
                         <li className="title-li">{t.foot11}</li>
                         <li>
-                            <a href="https://www.google.com/maps?q=41.293376,69.171515&ll=41.293376,69.171515&z=16" className="link">{t.foot12}</a>
+                            <a href="https://maps.app.goo.gl/aix8KX9HZhtYn3UbA" className="link">{t.foot12}</a>
                         </li>
                         <li>
                             <a href="tel:+99871-217-40-00" className="link">+998 71 217 40 00</a>
