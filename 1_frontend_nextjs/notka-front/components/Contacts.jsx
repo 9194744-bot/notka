@@ -86,7 +86,7 @@ function Contacts({ changeModal }) {
                     </div>
                     <div className="button col-12">
                         <button onClick={() => sendMessage()}>{t("send")}</button>
-                        <button onClick={() => window.open('https://www.google.com/maps?q=41.293376,69.171515&ll=41.293376,69.171515&z=16')}>{t("location")}</button>
+                        <button onClick={() => window.open('https://www.google.com/maps/place/Notka/@41.2932204,69.1722134,18.72z/data=!4m6!3m5!1s0x38ae8b90373672c9:0xbd553b45f061056b!8m2!3d41.293404!4d69.1717373!16s%2Fg%2F11rdcjhcb0?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D')}>{t("location")}</button>
                     </div>
                 </div>
             </div>
